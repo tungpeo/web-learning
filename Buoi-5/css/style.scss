@@ -1,0 +1,9 @@
+@import "style";
+
+.1{
+    color:red;
+
+    & & {
+        color:green;
+    }
+}
