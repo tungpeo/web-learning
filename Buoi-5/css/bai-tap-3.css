@@ -48,14 +48,20 @@
 }
 
 .main-title{
+    
     width:300px;
     color:white;
+    padding-right:8%;
 }
 
 .main-title h3{
     color:rgb(214, 118, 0);
     font-weight:100;
     letter-spacing: 2px;
+}
+
+.main-title h1{
+    font-weight:100;
 }
 
 .label{
@@ -69,7 +75,7 @@
 }
 
 .label .title{
-    font-weight:500;
+    font-weight:300;
     font-size:22px;
     padding:0 0 15px 0;
 }
