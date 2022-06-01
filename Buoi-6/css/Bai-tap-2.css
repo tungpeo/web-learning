@@ -1,115 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-.roboto{
+.roboto {
     font-family: 'Roboto', sans-serif;
 }
 
-.open-sans{
-    font-family:'Open Sans', sans-serif;
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
 }
 
 
-.display-block{
+.display-block {
     display: inline-block;
 }
 
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.absolute{
+.absolute {
     position: absolute;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.left{
-    text-align:left;
+.left {
+    text-align: left;
 }
 
-.w-400{
-    width:400px;
+.w-400 {
+    width: 400px;
 }
 
-.w-300{
-    width:300px;
+.w-300 {
+    width: 300px;
 }
 
 
-.w-200{
-    width:200px;
+.w-200 {
+    width: 200px;
 }
 
-.h-300{
-    height:300px;
+.h-300 {
+    height: 300px;
 }
 
-.h-200{
-    height:200px;
+.h-200 {
+    height: 200px;
 }
 
-.w-50{
-    width:calc(85% / 2);
+.w-50 {
+    width: calc(85% / 2);
     object-fit: cover;
 }
 
-.radius{
+.radius {
     border-radius: 15px;
 }
 
-.z-999{
-    z-index: 3;
+.z-999 {
+    z-index: 999;
 }
 
-.padding-15{
-    padding:8px;
+.padding-15 {
+    padding: 8px;
 }
 
 /*  */
 
-.outside-container{
-    height:300px;
+.outside-container {
+    height: 300px;
     background-color: #3c3f5d;
 }
 
-.container{
-    height:100%;
-    width:1080px;
-    margin:0 auto;
-    margin-top:-105px;
-    text-align:center;
+.container img{
+    height:500px;
+    top:0;
+    left:0;
+
 }
 
-.title{
-    top:600px;
-    background-color: white;
-    padding:30px 28px;
+.container {
+    height: 100%;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: -105px;
+    text-align: center;
     box-sizing: border-box;
 }
 
-.title h3{
-    font-weight:200;
-    padding:15px 0;
+.title {
+    background-color: white;
+    padding: 25px 20px;
+    top:400px;
+    box-sizing: border-box;
 }
 
-.title h1{
-    font-size:46px;
-    line-height:48px;
+.title h3 {
+    font-weight: 200;
+    padding: 15px 0;
+}
+
+.title h1 {
+    font-size: 36px;
+    line-height: 38px;
     letter-spacing: 2px;
 }
 
-.orange-label{
-    width:300px;
-    height:130%;
-    right:-100px;
-    top: -105px;
-    z-index:3;
+.orange-label {
+    width: 300px;
+    height: 600px;
+    top:-50px;
     background-color: #ec6843;
+    left: 500px;
 }
-
-
-
