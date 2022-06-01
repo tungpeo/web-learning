@@ -1,0 +1,44 @@
+
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.h-100{
+    height:100px;
+}
+
+.h-30{
+    height:30px;
+}
+
+.w-30{
+    width:30px;
+}
+
+.green{
+    background-color: blue;
+}
+
+.brown{
+    background-color: brown;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+
+
+.flex-center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
