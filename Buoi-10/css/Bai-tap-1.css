@@ -42,6 +42,18 @@
     width:23px;
 }
 
+.w-60{
+    width:60%;
+}
+
+.w-80{
+    width:80%;
+}
+
+.w-50{
+    width:50%;
+}
+
 .center{
     text-align: center;
 }
@@ -117,7 +129,6 @@
 }
 
 .completed{
-    width:60%;
     background-color: #feaf65;
     height:4px;
     border-radius: 99px;
