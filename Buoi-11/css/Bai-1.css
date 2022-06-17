@@ -1,0 +1,46 @@
+.container2{
+    position: relative;
+    background-image: url('../anh1.jpg');
+    width:100%;
+    height:200vh;
+
+}
+
+
+.container{
+    width:100%;
+    position: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+}
+
+.lightbox{
+    width:500px;
+    padding:25px;
+    color: white;
+    box-sizing: border-box;
+    opacity: 1 !important;
+    background-color: #4fa46b;
+}
+
+button{
+    width:80%;
+    font-size:20px;
+    color:white;
+    font-weight: 600;
+    height:40px;
+    margin:20px auto;
+    border:none;
+    display:block;
+    background-color: #006923;
+}
+
+.close:active  .container{
+    display:none;
+}
+
