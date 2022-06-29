@@ -1,0 +1,126 @@
+body{
+    background-color: #232223;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.none{
+    display:none;
+    flex-direction: column;
+}
+
+.flex{
+    display:flex;
+}
+
+.info {
+   align-items: center;
+   color:white;
+}
+
+.info .title{
+    opacity: 0;
+    font-size:16px; 
+}
+
+
+.title .main{
+    font-size:22px;
+    font-weight: 600;
+   
+}
+
+.tab-container:focus .title{
+    display:flex;   
+    opacity: 1;
+    transition-delay: 1s;
+    transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity .5s ease-out;
+}
+
+.tab-container:not(:focus){
+    width: 120px !important;
+    transition:all 0.5s ease-in-out;
+    align-items: center;
+}
+
+.container{
+    width:80vw;
+    height:80vw;
+    margin:0 auto;
+    display:flex;
+
+    flex-direction: row;
+    justify-content: center;
+    gap:3vh;
+}
+
+.tab-container{
+    height:600px;
+    border-radius: 5vw;
+    flex-direction: column;
+    align-items: center;    
+    overflow: hidden;
+    text-overflow: clip; 
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.unique-01{
+    background-image: url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: baseline;
+    width:600px;
+}
+
+.unique-02{
+    background-image: url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:120px;
+}
+
+.unique-03{
+    background-image: url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:120px;
+}
+
+.unique-04{
+    background-image: url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:120px;
+}
+
+.info .icon{
+    color:#ED5565;
+    font-size:16px;
+    text-align: center;
+    background-color:white;
+    width:50px;
+    height:50px;
+    margin:2vw 3vh;
+    border-radius:99px;
+    line-height: 50px;
+   
+}
+
+/*  */
+
+.tab-container:focus{
+    width: 600px !important;
+    align-items: baseline;
+    transition:all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
