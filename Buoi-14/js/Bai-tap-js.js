@@ -42,3 +42,19 @@ function nhietdoF(){
     document.getElementById("nhietdo").innerHTML = F;
 
 }
+
+function loading(){
+    document.getElementById("loadingg").style.width = "500px";
+}
+
+
+function HienThi(){
+    document.querySelector('div.display').innerText = document.querySelector("input").value;
+}
+
+function FindMax(){
+    let a = prompt("Moi ban nhap a");
+    let b = prompt("Moi ban nhap b");
+    let c = prompt("Moi ban nhap c");
+    document.getElementById("max").innerHTML = "Gia tri max la: " + Math.max(a, b, c);
+}
