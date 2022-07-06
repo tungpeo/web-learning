@@ -57,4 +57,6 @@ function FindMax(){
     let b = prompt("Moi ban nhap b");
     let c = prompt("Moi ban nhap c");
     document.getElementById("max").innerHTML = "Gia tri max la: " + Math.max(a, b, c);
+    let d = document.getElementById("input");
 }
+
