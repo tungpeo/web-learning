@@ -59,12 +59,29 @@ function Bai6(){
 function Bai7(){
     let sdt = document.getElementById("sdt").value;
     let ankytu = sdt.replace(/\d{4}$/, '****');
+    let ankytu2 = sdt.split(4);
+    let add = ankytu2.concat("****");
     let xoa;
     
-    if(ankytu.includes(0, 0)){
-        xoa = ankytu.substr(1);
+    if(add.includes(0, 0)){
+        xoa = add.substr(1);
+        document.getElementById("ankytu").innerHTML = xoa;  
+    }
+    else{
+        document.getElementById("ankytu").innerHTML = ankytu2;
     }
     
-    document.getElementById("ankytu").innerHTML = xoa;  
-
+    
 }
+
+function Bai8(){
+    let validate = document.getElementById("phone").value;
+    let regex = /^(\([0-9]{3}\)\s*|[0-9]{3}\-)[0-9]{3}-[0-9]{4}$/;
+    if(validate.match(regex)){
+        document.getElementById("sodienthoai").innerHTML = "Day la so dien thoai"; 
+    }
+    else{
+        document.getElementById("sodienthoai").innerHTML = "Day khong phai la so dien thoai"; 
+    }
+}
+
