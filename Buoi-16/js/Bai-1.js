@@ -57,8 +57,8 @@ function Bai4() {
     let soluongduong = document.getElementById("soluongduong");
     let soluongam = document.getElementById("soluongam");
     let duongmax = document.getElementById("duongmax");
-    let ammax = document.getElementById("ammax");
-    taomang = mang.split(' ');
+    let duongmin = document.getElementById("ammax");
+    taomang = mang.split(' ').map(i => parseInt(i));
     let mangam = [];
     let mangduong = [];
     let count = 0;
@@ -83,13 +83,34 @@ function Bai4() {
 
     let max = mangduong[0];
     let min = mangduong[0];
+
     for (let i = 0; i < mangduong.length; i++) {
         if (max < mangduong[i]) {
             max = mangduong[i];
         }
     }
-    
-    duongmax.innerHTML = 'Dương Max: ' + max;
-    ammax.innerHTML = 'Dương Min: ' + min;
 
+    for (let i = 0; i < mangduong.length; i++) {
+        if (min > mangduong[i]) {
+            min = mangduong[i];
+        }
+    }
+
+    duongmax.innerHTML = 'Dương Max: ' + max;
+    duongmin.innerHTML = 'Dương Min: ' + min;
+
+}
+
+function Bai5() {
+    let n = parseInt(document.getElementById("n").value);
+    let kiemtra = document.getElementById("kiemtrasnt");
+    if (n < 2 || n < 0){
+        kiemtra.innerHTML = n + " không phải là số nguyên tố";
+    }
+    let dem = 0;
+    for(let i = 2; i <= Math.sqrt(n); i++){
+        if(n%i==0) dem++;
+    }
+    if(dem==0) kiemtra.innerHTML = n + " không phải là số nguyên tố";
+    else kiemtra.innerHTML = n + " là số nguyên tố";
 }
