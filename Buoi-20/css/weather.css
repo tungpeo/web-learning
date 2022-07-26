@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+};
+
+body{
+    
+}
+
+.flex{
+    display:flex;
+}
+
+.input-location{
+    flex-direction: column;
+    margin:25px 0 ;
+}
+
+
+.main{
+    background: #000 center/cover url("./screen-10.jpg") no-repeat;
+    height:100vh;
+    font-size:18px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:white;
+
+}
+
+.main-weather{
+    text-align: center;
+}
+
+
+.temperature{
+    justify-content: center;
+}
+
+.temperature .number{
+    font-size:72px;
+    font-weight:bold;
+}
+
+.divider{
+    border-left:1px solid white;
+    height:50px;
+
+}
+
+.information{
+    margin:25px 0;
+    font-size:14px;
+    flex-grow: 30px;
+    align-items: center;
+    justify-content: space-around;
+    width:300px;
+}

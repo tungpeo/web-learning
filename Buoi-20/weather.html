@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/weather.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main flex">
+        <div class="weather-section">
+            <div class="input-location flex">
+                <h3>Mời bạn nhập tên thành phố</h3>
+                <select name="location" id="city">
+                    <option value="haiphong">Hai Phong</option>
+                    <option value="hanoi">Ha Noi</option>
+                    <option value="hcmc">Ho Chi Minh City</option>
+                    <option value="danang">Da Nang</option>
+                    <option value="dalat">Da Lat</option>
+                </select>
+                <button>Hiển thị thành phố</button>
+            </div>
+            <div class="main-weather">
+                <div class="location">Hai Phong City, Vietnam</div>
+                <div class="temperature flex">
+                    <div class="number">30</div>
+                    <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" class="image">
+                </div>
+                <div class="condition">Trời nắng</div>
+            </div>
+            <div class="information flex">
+                <div class="info-01">
+                    <div class="feel-like">Cảm giác như: 30</div>
+                    <div class="wind">Tốc độ gió: 80km/h</div>
+                    <div class="visibility">Tầm nhìn: 10km</div>
+                </div>
+                <div class="divider"></div>
+                <div class="info-02">
+                    <div class="barometer">Barometer: 30</div>
+                    <div class="humidity">Độ ẩm: 84%</div>
+                    <div class="dew-point">Dew point: 26do</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="api.js"></script>
+<script src="js/weather.js"></script>
+</html>
