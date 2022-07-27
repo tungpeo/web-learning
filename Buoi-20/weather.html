@@ -21,32 +21,34 @@
                     <option value="danang">Da Nang</option>
                     <option value="dalat">Da Lat</option>
                 </select>
-                <button>Hiển thị thành phố</button>
+                <button onclick="HienThi()">Hiển thị thành phố</button>
             </div>
+
             <div class="main-weather">
                 <div class="location">Hai Phong City, Vietnam</div>
                 <div class="temperature flex">
-                    <div class="number">30</div>
-                    <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" class="image">
+                    <div class="celcius"></div>
+                    <img src="http://openweathermap.org/img/wn/02n@2x.png" alt="" id="image">
                 </div>
-                <div class="condition">Trời nắng</div>
+                <div class="condition"></div>
             </div>
+
             <div class="information flex">
                 <div class="info-01">
-                    <div class="feel-like">Cảm giác như: 30</div>
-                    <div class="wind">Tốc độ gió: 80km/h</div>
-                    <div class="visibility">Tầm nhìn: 10km</div>
+                    <div class="feel-like">Cảm giác như: </div>
+                    <div class="windspeed">Tốc độ gió: </div>
+                    <div class="visibility">Tầm nhìn: </div>
                 </div>
                 <div class="divider"></div>
                 <div class="info-02">
-                    <div class="barometer">Barometer: 30</div>
-                    <div class="humidity">Độ ẩm: 84%</div>
-                    <div class="dew-point">Dew point: 26do</div>
+                    <div class="apsuat">Áp suất: </div>
+                    <div class="humidity">Độ ẩm: </div>
+                    <div class="maxtemp">Nhiệt độ cao nhất: </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<script src="api.js"></script>
+<script src="js/api.js"></script>
 <script src="js/weather.js"></script>
 </html>
