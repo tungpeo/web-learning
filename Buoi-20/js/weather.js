@@ -9,6 +9,7 @@ let diadiem = document.querySelector('.location');
 let nhietdo = document.querySelector('.celcius');
 let condition = document.querySelector('.condition');
 let image = document.getElementById('image')
+let current = document.getElementById("time");
 
 // let xhr = new XMLHttpRequest()
 
@@ -38,7 +39,10 @@ if(option == "haiphong"){
     lon = 106.688087;
 }
 
-
+setInterval(() => {
+    let date = new Date();
+    current.innerHTML = date.toLocaleDateString() + " " + date.toLocaleTimeString();
+}, 1000);
 
 
 console.log(lat, lon);
@@ -100,4 +104,7 @@ function HienThi() {
     .catch(error => alert("Khong hien thi dung"))
 
 }
+
+
+
 // fetch('https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=${apikey}')
