@@ -39,7 +39,7 @@ const fetchCountry = () => {
         res.json().then(country => {
             const countries = country.map(item => {
                 return {
-                    name: item.altSpellings ? . [3] || item.altSpellings ? . [1] || item.altSpellings[0],
+                    name: item.altSpellings ?.[3] || item.altSpellings ? . [1] || item.altSpellings[0],
                     country_code: item.cca2
                 }
             })
