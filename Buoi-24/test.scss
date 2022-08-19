@@ -1,0 +1,19 @@
+body{
+    background-color:#17181C;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    color:white;
+}
+
+
+.container{
+    border:1px solid #8fc866;
+    padding: 5px 10px;
+    transition:box-shadow 1s, color 1s;
+
+    &:hover{
+        box-shadow:inset 900px 0px #8fc866;
+    }
+}
