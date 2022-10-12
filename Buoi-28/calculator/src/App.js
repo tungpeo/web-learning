@@ -18,7 +18,7 @@ function App() {
         setResult(setDigit + type);
       }
       if(step == 2){
-
+        
       }
     }
     else{
